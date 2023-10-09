@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>result</title>
+            <style>
+                /* 添加外边距将整个页面向右移动 */
+                body {
+                    margin-left: 20px;
+                    margin-top: 20px;
+                }
+
+                .right-column {
+                    float: right; /* 让内容浮动到右侧 */
+                    width: 30%; /* 设置右侧列的宽度 */
+                    padding: 20px; /* 添加一些内边距 */
+                }
+            </style>
+    </head>
+    <body>
+        <p>今天是{{ today_nongli }}，阳历{{ today_yangli }}</p>
+        <h1>查询结果：</h1>
+        <h2>适宜的 {{ user_problem }} 日子有：</h2>
+        <p>{{ result_yi }}</p>
+        <p></p>
+        <h2>不适宜的 {{ user_problem }} 日子有：</h2>
+        <p>{{ result_ji }}</p>
+    </body>
+</html>
